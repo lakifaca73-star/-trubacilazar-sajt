@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#073b36">
+  <meta name="description" content="Trubači Bor – orkestar Lazar Ajdarević za svadbe, krštenja, rođendane i veselja u Boru i okolini. Pozovite 063 833 6379 i proverite slobodan termin.">
+  <title>Trubači Bor | Trubači za svadbe i slavlja u Boru – Lazar Ajdarević</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--green:#073b36;--green2:#0d5b50;--blue:#123f70;--blue2:#1b5b91;--gold:#d9b45c;--cream:#f5f3eb;--ink:#102b2b;--muted:#667775}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:#fbfaf6}
+    a{color:inherit;text-decoration:none} .wrap{width:min(1160px,92%);margin:auto}
+    .top{background:#052c29;color:#dce9e5;font-size:13px;padding:9px 0}.top .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    header{position:sticky;top:0;z-index:10;background:rgba(7,59,54,.97);backdrop-filter:blur(12px);box-shadow:0 5px 22px #001d1a25}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px;color:white}
+    .brand{font-family:"Playfair Display",serif;font-weight:800;font-size:20px;letter-spacing:.2px;line-height:1.05}.brand span{display:block;color:var(--gold);font:700 10px "DM Sans";letter-spacing:2.2px;margin-top:6px}
+    .links{display:flex;align-items:center;gap:24px;font-size:13px;font-weight:700}.links a{opacity:.9}.links a:hover{color:var(--gold)}
+    .navcall,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;padding:13px 20px;font-weight:800;font-size:13px}
+    .navcall{background:var(--gold);color:#17332e}.menu{display:none;background:none;border:1px solid #ffffff55;color:white;border-radius:10px;padding:9px 12px;font-size:20px}
+    .hero{position:relative;min-height:610px;display:flex;align-items:center;color:white;overflow:hidden;background:linear-gradient(90deg,rgba(3,35,33,.96) 0%,rgba(4,45,44,.85) 42%,rgba(4,39,55,.28) 100%),url("assets/lazar-naslovna.jpeg") center/cover}
+    .hero:after{content:"";position:absolute;inset:auto 0 0;height:7px;background:linear-gradient(90deg,var(--gold),#f1d88d,var(--blue2))}
+    .hero-content{position:relative;z-index:1;padding:85px 0;max-width:690px}
+    .eyebrow{color:var(--gold);font-size:12px;font-weight:800;letter-spacing:3px;text-transform:uppercase}
+    h1,h2,h3{font-family:"Playfair Display",serif} h1{font-size:clamp(42px,6vw,76px);line-height:1.02;margin:17px 0 20px;letter-spacing:-1.5px}
+    .hero p{max-width:580px;color:#e0ebe6;font-size:17px;line-height:1.8;margin:0 0 28px}
+    .btn-primary{background:var(--gold);color:#17352f}.btn-outline{border:1px solid #ffffff88;color:white}.btn:hover,.navcall:hover{transform:translateY(-2px);filter:brightness(1.05)}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+    .quick{background:white;position:relative;margin-top:-1px;box-shadow:0 15px 40px #0b37301a}.quick-grid{display:grid;grid-template-columns:repeat(3,1fr);padding:25px 0}.quick-item{padding:5px 25px;border-right:1px solid #e7e9e1}.quick-item:last-child{border:0}.quick strong{display:block;color:var(--green);font-size:15px}.quick span{font-size:13px;color:var(--muted)}
+    section{padding:88px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 42px}.section-head h2{font-size:clamp(32px,4vw,47px);color:var(--green);margin:12px 0}.section-head p{color:var(--muted);line-height:1.8;margin:0}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.about-photo{position:relative}.about-photo img{width:100%;display:block;max-height:610px;object-fit:cover;object-position:center 35%;border-radius:18px;box-shadow:18px 18px 0 #dbe8df}
+    .about-copy h2{font-size:42px;color:var(--green);line-height:1.1;margin:12px 0 18px}.about-copy p{line-height:1.85;color:var(--muted)}.ticks{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin:25px 0}.ticks span{font-weight:700;font-size:14px}.ticks span:before{content:"✓";color:var(--green2);font-weight:900;margin-right:9px}
+    .services{background:var(--cream)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid #e8e9e1;border-radius:16px;padding:28px;box-shadow:0 10px 28px #0b37300a}.card .num{font:800 13px "DM Sans";color:var(--gold);letter-spacing:2px}.card h3{font-size:23px;color:var(--green);margin:13px 0 9px}.card p{font-size:14px;line-height:1.8;color:var(--muted);margin:0}
+    .gallery-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:20px;align-items:stretch}.gallery-grid img{width:100%;height:100%;min-height:300px;max-height:520px;object-fit:cover;border-radius:16px}.gallery-grid img:first-child{object-position:center}
+    .cta{background:linear-gradient(120deg,var(--green),var(--blue));color:white;text-align:center;padding:70px 20px}.cta h2{font-size:clamp(30px,4vw,46px);margin:0 0 12px}.cta p{color:#dce8e7;margin:0 auto 25px;max-width:650px;line-height:1.8}
+    .cities{background:var(--cream)}.city-list{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;max-width:980px;margin:auto}.city-list a{background:white;border:1px solid #e3e6dc;border-radius:999px;padding:10px 18px;font-weight:700;font-size:14px;color:var(--green);transition:.2s}.city-list a:hover{border-color:var(--gold);color:var(--blue)}.city-list a[aria-current]{background:var(--green);border-color:var(--green);color:white}
+    .faq{max-width:850px;margin:auto}.faq details{background:white;border:1px solid #e6e9e2;border-radius:12px;padding:18px 21px;margin:11px 0}.faq summary{font-weight:800;color:var(--green);cursor:pointer}.faq details p{color:var(--muted);line-height:1.8;margin-bottom:0}
+    footer{background:#052c29;color:#dbe7e1;padding:48px 0 25px}.footgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:35px}.footgrid h3{color:var(--gold);font-size:20px}.footgrid p,.footgrid a{font-size:14px;line-height:2;color:#c2d2cc}.copyright{border-top:1px solid #ffffff22;margin-top:35px;padding-top:20px;font-size:12px;color:#a9bcb5}
+    .float{position:fixed;right:18px;bottom:18px;z-index:20;display:flex;flex-direction:column;gap:9px}.float a{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;color:white;font-weight:900;box-shadow:0 5px 18px #001d1a55}.wa{background:#1b9e61}.call{background:var(--blue2)}
+    @media(max-width:850px){.links{display:none;position:absolute;top:76px;left:0;right:0;background:var(--green);padding:20px 4%;flex-direction:column;align-items:flex-start}.links.open{display:flex}.menu{display:block}.navcall{margin-left:auto}.about-grid{grid-template-columns:1fr;gap:35px}.about-photo{max-width:600px;margin:auto}.cards{grid-template-columns:1fr 1fr}.footgrid{grid-template-columns:1fr 1fr}}
+    @media(max-width:560px){.top .wrap{justify-content:center}.nav{height:68px}.links{top:68px}.brand{font-size:17px}.navcall{padding:11px 13px;font-size:12px}.hero{min-height:570px;background-position:58% center}.hero-content{padding:65px 0}.hero p{font-size:15px}.quick-grid{grid-template-columns:1fr;padding:10px 0}.quick-item{border-right:0;border-bottom:1px solid #e7e9e1;padding:13px 4px}.quick-item:last-child{border:0}section{padding:65px 0}.cards{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr}.gallery-grid img{min-height:230px}.ticks{grid-template-columns:1fr}.footgrid{grid-template-columns:1fr}.float{right:12px;bottom:12px}}
+  </style>
+</head>
+<body>
+  <div class="top"><div class="wrap"><span>Trubači za svadbe i slavlja u Boru</span><span>Bor i okolina · Srbija · dijaspora — po dogovoru</span></div></div>
+  <header><div class="wrap nav">
+    <a class="brand" href="index.html">TRUBAČI LAZAR AJDAREVIĆ<span>ORKESTAR ZA VAŠE SLAVLJE</span></a>
+    <nav class="links" id="navlinks"><a href="index.html">Početna</a><a href="#o-nama">O nama</a><a href="#nastupi">Nastupi</a><a href="#galerija">Galerija</a><a href="#gradovi">Gradovi</a><a href="#pitanja">Pitanja</a><a href="#kontakt">Kontakt</a></nav>
+    <a class="navcall" href="tel:+381638336379">Pozovi: 063 833 6379</a>
+    <button class="menu" aria-label="Otvori meni" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+  </div></header>
+
+  <main>
+    <section class="hero" id="pocetna"><div class="wrap"><div class="hero-content">
+      <div class="eyebrow">Trubači Bor</div>
+      <h1>Trubači za slavlja<br>u Boru</h1>
+      <p>Orkestar Lazar Ajdarević dolazi na svadbe, krštenja, rođendane i velika veselja u Boru i okolini. Prava trubačka atmosfera, energija uživo i dogovor prilagođen vašem slavlju.</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="tel:+381638336379">☎ Pozovi odmah</a><a class="btn btn-outline" href="https://wa.me/381637542528" target="_blank" rel="noopener">Pošalji poruku</a></div>
+    </div></div></section>
+
+    <div class="quick"><div class="wrap quick-grid">
+      <div class="quick-item"><strong>Brz dogovor termina</strong><span>Provera datuma i detalja nastupa</span></div>
+      <div class="quick-item"><strong>Svadbe i sva veselja</strong><span>Program prema vašoj proslavi</span></div>
+      <div class="quick-item"><strong>Bor i okolina</strong><span>Dolazak na mesto proslave po dogovoru</span></div>
+    </div></div>
+
+    <section id="o-nama"><div class="wrap about-grid">
+      <div class="about-photo"><img src="assets/lazar-nastup.jpeg" alt="Lazar Ajdarević nastupa sa trubom na bini"></div>
+      <div class="about-copy"><div class="eyebrow">Orkestar Lazar Ajdarević</div><h2>Trubačka atmosfera za vaše veselje u Boru</h2>
+        <p>Kada se slavi u Boru, trube daju ritam celom danu, od dočeka gostiju do poslednje pesme. Orkestar Lazar Ajdarević možete angažovati za svadbu, krštenje, rođendan ili veliko porodično veselje.</p>
+        <p>Nastup dogovaramo prema datumu, mestu održavanja, satnici i željama domaćina, bilo da se slavi u restoranu, sali za proslave ili u dvorištu. Pozovite nas da proverimo termin u Boru i razgovaramo o detaljima.</p>
+        <div class="ticks"><span>Svadbe i venčanja</span><span>Krštenja</span><span>Rođendani</span><span>Velika veselja</span></div>
+        <a class="btn btn-primary" href="tel:+381638336379">Pozovi za dogovor</a>
+      </div>
+    </div></section>
+
+    <section class="services" id="nastupi"><div class="wrap"><div class="section-head"><div class="eyebrow">Za svaku posebnu priliku</div><h2>Trubači u Boru za svaku priliku</h2><p>Dogovorite nastup koji se uklapa u vaš događaj, mesto i plan proslave u Boru.</p></div>
+      <div class="cards">
+        <article class="card"><div class="num">01 / SVADBE</div><h3>Svadbe i venčanja</h3><p>Trubači za doček mladenaca, dolazak po mladu i najveselije trenutke svadbenog dana u Boru.</p></article>
+        <article class="card"><div class="num">02 / PORODICA</div><h3>Krštenja i rođendani</h3><p>Muzika uživo za porodične proslave, okupljanje dragih ljudi i posebne trenutke.</p></article>
+        <article class="card"><div class="num">03 / VESELJA</div><h3>Velika slavlja</h3><p>Orkestar za privatna i organizovana veselja u Boru i okolini, uz prethodni dogovor o programu i trajanju.</p></article>
+      </div>
+    </div></section>
+
+    <section id="galerija"><div class="wrap"><div class="section-head"><div class="eyebrow">Atmosfera uživo</div><h2>Pogledajte deo naše priče</h2><p>Fotografije sa trubačem Lazarom Ajdarević.</p></div>
+      <div class="gallery-grid"><img src="assets/lazar-naslovna.jpeg" alt="Trubači Lazar Ajdarević – naslovna fotografija"><img src="assets/lazar-nastup.jpeg" alt="Lazar Ajdarević svira trubu na nastupu"></div>
+    </div></section>
+
+    <section class="cta"><div class="wrap"><div class="eyebrow">Rezervacije i informacije</div><h2>Planirate slavlje u Boru? Hajde da se dogovorimo.</h2><p>Pošaljite datum, tačno mesto održavanja i vrstu proslave. Pozovite za proveru slobodnog termina i dogovor o nastupu.</p><a class="btn btn-primary" href="tel:+381638336379">☎ 063 833 6379</a></div></section>
+
+    <section class="cities" id="gradovi"><div class="wrap"><div class="section-head"><div class="eyebrow">Nastupamo širom Srbije</div><h2>Trubači i u drugim gradovima</h2><p>Orkestar dolazi na slavlja i u drugim gradovima Srbije. Izaberite grad za više informacija.</p></div>
+      <div class="city-list"><a href="trubaci-beograd.html">Beograd</a><a href="trubaci-novi-sad.html">Novi Sad</a><a href="trubaci-nis.html">Niš</a><a href="trubaci-kragujevac.html">Kragujevac</a><a href="trubaci-subotica.html">Subotica</a><a href="trubaci-pancevo.html">Pančevo</a><a href="trubaci-krusevac.html">Kruševac</a><a href="trubaci-kraljevo.html">Kraljevo</a><a href="trubaci-cacak.html">Čačak</a><a href="trubaci-zrenjanin.html">Zrenjanin</a><a href="trubaci-sabac.html">Šabac</a><a href="trubaci-smederevo.html">Smederevo</a><a href="trubaci-valjevo.html">Valjevo</a><a href="trubaci-sremska-mitrovica.html">Sremska Mitrovica</a><a href="trubaci-sombor.html">Sombor</a><a href="trubaci-uzice.html">Užice</a><a href="trubaci-pozarevac.html">Požarevac</a><a href="trubaci-jagodina.html">Jagodina</a><a href="trubaci-zajecar.html">Zaječar</a><a href="trubaci-bor.html" aria-current="page">Bor</a><a href="trubaci-vrsac.html">Vršac</a><a href="trubaci-indjija.html">Inđija</a><a href="trubaci-novi-becej.html">Novi Bečej</a><a href="trubaci-backa-palanka.html">Bačka Palanka</a><a href="trubaci-vrbas.html">Vrbas</a><a href="trubaci-backa-topola.html">Bačka Topola</a><a href="trubaci-gornji-milanovac.html">Gornji Milanovac</a><a href="trubaci-arandjelovac.html">Aranđelovac</a><a href="trubaci-smederevska-palanka.html">Smederevska Palanka</a></div>
+    </div></section>
+
+    <section id="pitanja"><div class="wrap"><div class="section-head"><div class="eyebrow">Korisne informacije</div><h2>Česta pitanja</h2><p>Odgovori na najčešća pitanja pre rezervacije trubačkog orkestra u Boru.</p></div>
+      <div class="faq">
+        <details><summary>Da li dolazite na proslave u Boru?</summary><p>Da. Za nastup u Boru i okolini pošaljite datum, mesto održavanja i vrstu proslave, pa ćemo se dogovoriti oko dolaska i programa.</p></details>
+        <details><summary>Kako mogu da proverim slobodan termin?</summary><p>Pozovite nas na 063 833 6379 ili pošaljite poruku na WhatsApp/Viber broj 063 754 2528.</p></details>
+        <details><summary>Za koje proslave mogu da angažujem orkestar?</summary><p>Za svadbe, krštenja, rođendane, porodična okupljanja i druga veselja.</p></details>
+        <details><summary>Od čega zavisi cena nastupa u Boru?</summary><p>Cena se dogovara prema datumu, tačnoj lokaciji, trajanju i detaljima nastupa. Pozovite za konkretnu ponudu.</p></details>
+      </div>
+    </div></section>
+  </main>
+
+  <footer id="kontakt"><div class="wrap"><div class="footgrid">
+    <div><div class="brand">TRUBAČI LAZAR AJDAREVIĆ<span>ORKESTAR ZA VAŠE SLAVLJE</span></div><p>Trubački orkestar za svadbe, krštenja, rođendane i velika slavlja u Boru i širom Srbije. Dogovor termina i nastupa direktno sa orkestrom.</p></div>
+    <div><h3>Brzi linkovi</h3><p><a href="index.html">Početna</a><br><a href="#o-nama">O nama</a><br><a href="#nastupi">Nastupi</a><br><a href="#galerija">Galerija</a><br><a href="#gradovi">Gradovi</a><br><a href="#pitanja">Česta pitanja</a></p></div>
+    <div><h3>Kontakt</h3><p>Poziv: <a href="tel:+381638336379">063 833 6379</a><br>WhatsApp/Viber: <a href="https://wa.me/381637542528">063 754 2528</a><br><a href="viber://chat?number=%2B381637542528">Otvori Viber</a></p></div>
+  </div><div class="copyright">© 2026 Trubači Lazar Ajdarević. Sva prava zadržana.</div></div></footer>
+  <div class="float"><a class="wa" href="https://wa.me/381637542528" aria-label="WhatsApp" target="_blank" rel="noopener">WA</a><a class="call" href="tel:+381638336379" aria-label="Pozovi">☎</a></div>
+</body></html>
